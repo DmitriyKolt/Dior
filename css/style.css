@@ -105,16 +105,19 @@ body {
 }
 
 .top-slide__btn {
+    margin-left: auto;
+}
+
+.button {
     color: #7449BB;
     text-transform: uppercase;
     font-weight: 700;
     padding: 21px 55px;
     border: 1px solid #7449BB;
     display: inline-block;
-    margin-left: auto;
 }
 
-.top-slide__btn:hover {
+.button:hover {
     color: #fff;
     background-color: #7449BB;
     transition: all 3s ease;
@@ -142,7 +145,8 @@ body {
 }
 
 .about {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+    overflow: hidden;
 }
 
 .about__inner {
@@ -168,10 +172,10 @@ body {
 
 .about__text {
     flex-basis: 387px;
+    line-height: 1.2;
 }
 
 .about__text p {
-    line-height: 1.2;
     margin-bottom: 15px;
 }
 
@@ -181,4 +185,82 @@ body {
 
 .about__item-title {
     margin-bottom: 20px;
+}
+
+.about__slider {
+    width: 1800px;
+    padding-left: 200px;
+    margin-left: -200px;
+    padding-bottom: 20px;
+}
+
+
+.about__arrow {
+    margin-left: -198px;
+    margin-top: -6px;
+}
+
+.container-arrow .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+}
+
+.accordeon {
+    margin-bottom: 223px;
+}
+
+.accordeon__inner {
+    padding-left: 200px;
+}
+
+.accordeon__item {
+    border-bottom: 1px solid #000;
+    padding: 50px 101px 0 0;
+    position: relative;
+}
+
+.accordeon__item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 51px;
+    background-image: url(../images/down.svg);
+    right: 85px;
+    top: 50px;
+    background-repeat: no-repeat;
+}
+
+.accordeon__item:last-child:after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/accordeon-img.jpeg);
+    width: 65px;
+    height: 120px;
+    bottom: -73px;
+    left: 268px;
+}
+
+.accordeon__triger {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordeon__triger-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    flex-basis: 300px;
+    padding-bottom: 42px;
+}
+
+.accordeon__triger-text {
+    flex-basis: 387px;
+    margin-right: 104px;
+}
+
+.accordeon__content {
+    padding-top: 20px;
+    display: none;
+}
+
+.accordeon__content p {
+    margin-bottom: 10px;
 }
